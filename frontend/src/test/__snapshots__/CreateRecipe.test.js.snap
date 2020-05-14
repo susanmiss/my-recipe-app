@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CreateRecipe /> Renders correctly 1`] = `ShallowWrapper {}`;
+
+exports[`<CreateRecipe /> renders correctly 1`] = `
+<div
+  className="container p-5"
+>
+  <br />
+  <h1>
+    Add Your Favorite Fat Recipe:
+  </h1>
+  <br />
+  <form
+    onSubmit={[Function]}
+  >
+    <div
+      className="form-group"
+    >
+      <label
+        className="text-muted"
+      >
+        Recipe Title
+      </label>
+      <input
+        className="form-control"
+        onChange={[Function]}
+        placeholder="Title Recipe"
+        required={true}
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="form-group"
+    >
+      <label
+        className="text-muted"
+      >
+        Recipe Title
+      </label>
+      <textarea
+        className="form-control txt-rec"
+        onChange={[Function]}
+        placeholder="Recipe"
+        required={true}
+        type="text"
+        value=""
+      />
+    </div>
+    <div>
+      <button
+        className="primary"
+      >
+        Create your Recipe
+      </button>
+    </div>
+  </form>
+</div>
+`;

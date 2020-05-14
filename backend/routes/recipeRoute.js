@@ -1,16 +1,13 @@
 const express = require('express');
 const router = express.Router();
+const {create, list, single, update, remove} = require('../controllers/recipeController')
 
 
-router.get('/all', function(req, res, next) {
-    // db.getAll()
-    // .then((houses) => {
-    //      res.status(200).json(houses);
-    // }).catch((error) => {
-    //     next(error);
-    // })
-    res.send('route test all recepi')
- })
+router.get('/list', list)
+router.get('/:slug', single)
+router.post('/create', create)
+router.put('/:slug', update)
+router.delete('/:slug', remove)
 
 
 module.exports = router
