@@ -3,6 +3,11 @@
 ## Susan Missaglia 
 
 ### Technologies
+- MondoDB
+- React
+- Node.js
+- Express
+- Bootstrap
 
 
 ### How to Use
@@ -15,6 +20,9 @@
 
 - Information in .env file:
 ```
+- Backend, use:
+
+-Frontend use:
 
 ```
 
@@ -23,24 +31,16 @@
 
 
 ### What challenges I/we overcame
+- Need to read the mongoose documentation to find the correct methods to use on backend
+- I've lost a lot of time because I forgot to import axios in all components that I need to fetch.
+- To update the recipe, didn't realise that need fetch to get the post before put. Took a while.
 
 ### What I/we struggled with
+- Since I had difficult to unsderstand how to get id in uuid, used the slugify package to use the recipe title as id.
+- Strugle to update in frontend the recipe.
 
 
-<!-- As you are feeding your mind with all of this new knowledge, feeding your body is also very important.
-Your task is to create a fullstack app to store your favourite recipes, to encourage you to cook good wholesome food and not rely on convenience foods.
-The application must:
-have a restful api using crud action
-Be tested to a minimum of 40%
-Have a .env file for storing username and passwords
-Be documented (readme including a how to use section)
-The application should:
-Be able to fetch and present a recipe
-Enter a new recipe
-Update a recipe
-Delete a recipe
-Be nicely styled
-The application could:
-Have a react front end
-You have free choice for DB.
-Deadline 5pm to get a link to us. -->
+### With more time
+- Implement a better form to put the recipe
+- Use uuid and not slug
+- Implement images to each recipes

@@ -6,7 +6,7 @@ const SingleRecipe = (props) => {
     const [recipe, setRecipe] = useState('');
 
     useEffect(() => {
-        axios.get(`${process.env.REACT_APP_API}/recipe/${props.match.params.slug}`)
+        axios.get(`${process.env.REACT_APP_API}/${props.match.params.slug}`)
         .then(response => setRecipe(response.data)) 
         .catch(error => alert('Error loading your single deliciuos recipe'))
     }, []);  

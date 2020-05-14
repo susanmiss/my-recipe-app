@@ -4,10 +4,10 @@ const {create, list, single, update, remove} = require('../controllers/recipeCon
 
 
 router.get('/list', list)
-router.get('/recipe/:slug', single)
+router.get('/:slug', single)
 router.post('/create', create)
-router.put('/recipe/:slug', update)
-router.delete('/recipe/:slug', remove)
+router.put('/:slug', update)
+router.delete('/:slug', remove)
 
 
 module.exports = router

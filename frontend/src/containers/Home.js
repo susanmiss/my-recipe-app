@@ -30,7 +30,7 @@ const App = () => {
 
   const deleteRecipe = (slug) => {
     axios
-      .delete(`${process.env.REACT_APP_API}/recipe/recipe/${slug}`)
+      .delete(`${process.env.REACT_APP_API}/${slug}`)
       .then(response => {
         alert(response.data.message)
         fetchRecipes()
@@ -64,7 +64,7 @@ const App = () => {
 
                
                   <div className="col-md-2">
-                  <Link to={`/recipe/update/${recipe.slug}`} className="btn btn-sm btn-outline-warning">
+                  <Link to={`recipe/update/${recipe.slug}`} className="btn btn-sm btn-outline-warning">
                       Update Recipe
                       </Link>
 

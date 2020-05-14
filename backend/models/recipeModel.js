@@ -4,12 +4,6 @@ const {ObjectId} = mongoose.Schema//ObjectId is embed in Scheema
 
 
 const recipeSchema = new mongoose.Schema({
-    id:{
-        type: String,
-        unique: true,
-        index: true,
-        lowercase: true
-    },
     recipeTitle: {
         type: String,
         trim: true, //when the user type space it will cut off
@@ -22,10 +16,6 @@ const recipeSchema = new mongoose.Schema({
         unique: true, //need to be unique, because will be the route later on.
         index: true, 
         lowercase: true //if pass the Uppercase, we will have lowercase by default
-    },
-    recipeIngredients: {
-        type: String, 
-        required: true
     },
     recipeContent: {
         type: String,

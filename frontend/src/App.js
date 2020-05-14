@@ -13,7 +13,7 @@ function App() {
     <Nav />
         <Switch> 
             <Route path='/' exact component={Home}/>
-            <Route path='/recipe/create' exact component={CreateRecipe}/>
+            <Route path='/create' exact component={CreateRecipe}/>
             <Route path='/recipe/:slug' exact component={SingleRecipe}/>
             <Route path='/recipe/update/:slug' exact component={UpdateRecipe}/>
         </Switch>   

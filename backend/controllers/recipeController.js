@@ -18,19 +18,17 @@ exports.list = (req, res) => {
 //CREATE NEW RECIPE:
 exports.create = (req, res) =>{
     //console.log(req.body)
-    const {recipeTitle, recipeContent, recipeIngredients} = req.body; 
+    const {recipeTitle, recipeContent} = req.body; 
     const slug = slugify(recipeTitle); //this is going to slugify the title
     //Creating a new Post: method from mongoose:
-    Post.create({recipeTitle, recipeContent, recipeIngredients, slug, id}, (err, recipes) => {
+    Post.create({recipeTitle, recipeContent, slug}, (err, recipes) => {
         if (!recipeTitle){
             return res.status(400).json({error: 'Title for your recipe is required'});
-        }else if(!recipeIngredients){
-            return res.status(400).json({error: 'Ingredients for your recipe are required'});
         }else if(!recipeContent){
             return res.status(400).json({error: 'Content for your recipe is required'});
-        }else{
-            res.json(recipes);
         }
+        res.json(recipes);
+        
  });
 }
 
@@ -51,9 +49,9 @@ exports.single = (req, res) => {
 //UPDATE RECIPE:
 exports.update = (req, res) => {
     const {slug} = req.params;
-    const {recipeTitle, recipeContent, recipeIngredients} = req.body;
+    const {recipeTitle, recipeContent} = req.body;
     //new: true is to be able to go back to the post after the update
-    Post.findOneAndUpdate({slug}, {recipeTitle, recipeContent, recipeIngredients}, {new: true}).exec((err, recipe) => {
+    Post.findOneAndUpdate({slug}, {recipeTitle, recipeContent}, {new: true}).exec((err, recipe) => {
         if(err) console.log(err)
             res.json(recipe)
     })
