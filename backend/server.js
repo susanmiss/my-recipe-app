@@ -25,6 +25,7 @@ app.get('/', (req, res) => {
 })
 
 
+
 //DB:
 mongoose.connect(process.env.DATABASE, {
   useNewUrlParser: true, 
@@ -46,3 +47,7 @@ const port = process.env.PORT || 8080
 app.listen(port, () => {
   console.log(`Listening on port: ${port}`);
 });
+
+
+module.export = app;
+
