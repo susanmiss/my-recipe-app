@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SingleRecipe /> Renders correctly 1`] = `ShallowWrapper {}`;
+
+exports[`<SingleRecipe /> renders correctly 1`] = `
+<div
+  className="container pb-5"
+>
+  <br />
+  <div
+    className="row"
+  >
+    <div
+      className="col-md-8 offset-md-2 pt-3 pb-2"
+    >
+      <h1 />
+      <p />
+      <p />
+    </div>
+  </div>
+</div>
+`;

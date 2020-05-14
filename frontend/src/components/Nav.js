@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 
 
 const Nav = () => (
-    <nav>
+
+    <nav class="nav">
         <ul className="nav nav-tabs">
             <li className="nav-item pr-3 pt-3 pb-3">
                 <Link to="/">Home</Link>
@@ -14,6 +15,7 @@ const Nav = () => (
             </li>           
         </ul>
     </nav>
+
 );
 
 export default Nav;
