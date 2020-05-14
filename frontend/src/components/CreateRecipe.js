@@ -52,7 +52,7 @@ const CreateRecipe = () => {
 
               <div className="form-group" >
                   <label className="text-muted">Recipe Title</label>
-                  <input onChange={handleChange('recipeContent')} value={recipeContent} type="text" className="form-control" placeholder="Recipe" required />
+                  <textarea onChange={handleChange('recipeContent')} value={recipeContent} type="text" className="form-control txt-rec" placeholder="Recipe" required ></textarea>
               </div>
       
         

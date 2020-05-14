@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-// import Logo from './logo-img.jpeg'
+import Logo from '../components/logo.jpg'
 
 
 const App = () => {
@@ -45,9 +45,10 @@ const App = () => {
       <br />
       <br />
       <h1 style={{ textAlign: 'center' }}>Getting fat in lockdown</h1>
+      <h2>Share only FAT recipes that can make us very fat :)</h2>
       <br />
       <br />
-      {/* <img src={Logo} alt="logo" className="logo-img" /> */}
+      <img src={Logo} alt="logo" className="logo-img" />
       <hr />
       {/* {JSON.stringify(posts)} */}
       {
@@ -66,9 +67,11 @@ const App = () => {
                   <div className="col-md-2">
                   <Link to={`recipe/update/${recipe.slug}`} className="btn btn-sm btn-outline-warning">
                       Update Recipe
-                      </Link>
+                  </Link>
+                  <br />
+                  <br />
 
-                <button onClick={() => deleteConfirm(recipe.slug)} className="btn btn-sm btn-outline-danger ml-1">Delete Recipe</button>
+                  <button onClick={() => deleteConfirm(recipe.slug)} className="btn btn-sm btn-outline-danger ml-1">Delete Recipe</button>
 
                   </div>
               
