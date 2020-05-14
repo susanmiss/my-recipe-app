@@ -1,11 +1,23 @@
 import React from 'react';
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import './App.css';
+import Home from './containers/Home'
+import CreateRecipe from './components/CreateRecipe';
+import SingleRecipe from './components/SingleRecipe';
+import UpdateRecipe from './components/UpdateRecipe';
+import Nav from './components/Nav'
 
 function App() {
   return (
-    <div className="App">
-      <h1>Test Front</h1>
-    </div>
+    <BrowserRouter>
+    <Nav />
+        <Switch> 
+            <Route path='/' exact component={Home}/>
+            <Route path='/recipe/create' exact component={CreateRecipe}/>
+            <Route path='/recipe/:slug' exact component={SingleRecipe}/>
+            <Route path='/recipe/update/:slug' exact component={UpdateRecipe}/>
+        </Switch>   
+    </BrowserRouter>
   );
 }
 
