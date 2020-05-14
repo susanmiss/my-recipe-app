@@ -1,5 +1,6 @@
 const express =  require('express')
 const morgan =  require('morgan')
+const slugify = require('slugify')
 const bodyParser =  require('body-parser')
 const cors =  require('cors')
 const mongoose =  require('mongoose')
@@ -15,7 +16,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(cors())
 app.use(morgan('dev'))
-app.use('/recepi', recipeRoutes);
+app.use('/recipe', recipeRoutes);
 
 
 //TESTING CONECTION:
