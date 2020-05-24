@@ -3,7 +3,7 @@
 ## Susan Missaglia 
 
 ### Technologies
-- MondoDB
+- MongoDB
 - React
 - Node.js
 - Express
