@@ -9,6 +9,10 @@
 - Express
 - Bootstrap
 
+## Quick Look
+
+![Recepi cover](./frontend/public/recepi-cover.png)
+
 
 ### How to Use
 - There are 2 folders inside this repo. Clone the repo.
