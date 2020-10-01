@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+Array [
+  <nav
+    className="nav"
+  >
+    <ul
+      className="nav nav-tabs"
+    >
+      <li
+        className="nav-item pr-3 pt-3 pb-3"
+      >
+        <a
+          href="/"
+          onClick={[Function]}
+        >
+          Home
+        </a>
+      </li>
+      <li
+        className="nav-item pr-3 pt-3 pb-3"
+      >
+        <a
+          href="/create"
+          onClick={[Function]}
+        >
+          Create
+        </a>
+      </li>
+    </ul>
+  </nav>,
+  <div
+    className="container pb-5"
+  >
+    <br />
+    <br />
+    <h1
+      style={
+        Object {
+          "textAlign": "center",
+        }
+      }
+    >
+      Getting fat in lockdown
+    </h1>
+    <h2>
+      Share only FAT recipes that can make us very fat :)
+    </h2>
+    <br />
+    <br />
+    <img
+      alt="logo"
+      className="logo-img"
+      src="logo.jpg"
+    />
+    <hr />
+  </div>,
+]
+`;

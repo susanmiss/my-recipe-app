@@ -1,0 +1,43 @@
+body{
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 30px;
+  background-color: rgb(70, 68, 68);
+  color: white;
+}
+
+hr{
+  color: white;
+}
+
+h1{
+  text-align: center;
+  font-size: 60px;
+}
+
+h2{
+  text-align: center;
+  margin-top: 40px;
+}
+
+
+li{
+  padding-left: 50px;
+  color: white;
+}
+
+a{
+  color: white;
+}
+
+a:hover{
+  color: rgb(63, 14, 14)
+}
+
+.logo-img{
+  border-radius: 15px;
+  max-width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
